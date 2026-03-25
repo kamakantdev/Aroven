@@ -1,0 +1,16 @@
+# Swastik Healthcare Platform - Robots.txt
+User-agent: *
+Allow: /
+
+# Dashboard areas require authentication — don't index
+Disallow: /admin/*
+Disallow: /doctor/*
+Disallow: /hospital/*
+Disallow: /pharmacy/*
+Disallow: /clinic/*
+Disallow: /diagnostic-center/*
+
+# API routes
+Disallow: /api/*
+
+Sitemap: https://swastik.health/sitemap.xml
