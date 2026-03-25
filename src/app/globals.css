@@ -1,0 +1,195 @@
+@import "tailwindcss";
+
+/* Enable class-based dark mode in Tailwind v4 */
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --font-inter: 'Inter', sans-serif;
+}
+
+body {
+  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+  @apply bg-gray-50 text-gray-900 dark:bg-gray-950 dark:text-gray-100;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #1e293b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #475569;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+
+/* Primary color utilities for dynamic theming */
+.bg-primary-600 {
+  background-color: var(--primary-color, #059669);
+}
+
+.bg-primary-700 {
+  background-color: var(--primary-color-dark, #047857);
+}
+
+.text-primary-600 {
+  color: var(--primary-color, #059669);
+}
+
+.border-primary-500 {
+  border-color: var(--primary-color, #059669);
+}
+
+.ring-primary-500 {
+  --tw-ring-color: var(--primary-color, #059669);
+}
+
+.focus\:ring-primary-500\/20:focus {
+  --tw-ring-color: color-mix(in srgb, var(--primary-color, #059669) 20%, transparent);
+}
+
+.focus\:border-primary-500:focus {
+  border-color: var(--primary-color, #059669);
+}
+
+.focus\:ring-primary-500:focus {
+  --tw-ring-color: var(--primary-color, #059669);
+}
+
+/* Role-specific theme variables */
+[data-theme="admin"] {
+  --primary-color: #1e40af;
+  --primary-color-dark: #1e3a8a;
+}
+
+[data-theme="doctor"] {
+  --primary-color: #059669;
+  --primary-color-dark: #047857;
+}
+
+[data-theme="hospital"] {
+  --primary-color: #0d9488;
+  --primary-color-dark: #0f766e;
+}
+
+[data-theme="clinic"] {
+  --primary-color: #db2777;
+  --primary-color-dark: #be185d;
+}
+
+[data-theme="pharmacy"] {
+  --primary-color: #ea580c;
+  --primary-color-dark: #c2410c;
+}
+
+[data-theme="ambulance"] {
+  --primary-color: #dc2626;
+  --primary-color-dark: #b91c1c;
+}
+
+/* OSM Leaflet map marker pulse animation */
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+
+.custom-marker {
+  background: none !important;
+  border: none !important;
+}
+
+/* Leaflet container overrides */
+.leaflet-container {
+  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+}
+
+/* =====================================================
+   DARK MODE AUTOMATIC OVERRIDES
+   These target common gray patterns used across all pages
+   so we don't need to add dark: to every component.
+   ===================================================== */
+
+/* --- Text colors auto-adapt in dark mode --- */
+.dark .text-gray-900 { color: #f3f4f6; }  /* gray-100 */
+.dark .text-gray-800 { color: #e5e7eb; }  /* gray-200 */
+.dark .text-gray-700 { color: #d1d5db; }  /* gray-300 */
+.dark .text-gray-600 { color: #9ca3af; }  /* gray-400 */
+.dark .text-gray-500 { color: #9ca3af; }  /* gray-400 */
+
+/* --- Background colors auto-adapt --- */
+.dark .bg-gray-50  { background-color: #030712; }  /* gray-950 */
+.dark .bg-gray-100 { background-color: #111827; }  /* gray-900 */
+.dark .bg-white    { background-color: #111827; }  /* gray-900 */
+
+/* --- Border colors auto-adapt --- */
+.dark .border-gray-200 { border-color: #374151; }  /* gray-700 */
+.dark .border-gray-100 { border-color: #1f2937; }  /* gray-800 */
+.dark .border-gray-300 { border-color: #4b5563; }  /* gray-600 */
+
+/* --- Hover backgrounds auto-adapt --- */
+.dark .hover\:bg-gray-50:hover  { background-color: #1f2937; } /* gray-800 */
+.dark .hover\:bg-gray-100:hover { background-color: #1f2937; } /* gray-800 */
+
+/* --- Subtle colored backgrounds for status badges/alerts in dark mode --- */
+.dark .bg-yellow-50  { background-color: rgba(234, 179, 8, 0.1); }
+.dark .bg-blue-50    { background-color: rgba(59, 130, 246, 0.1); }
+.dark .bg-green-50   { background-color: rgba(34, 197, 94, 0.1); }
+.dark .bg-red-50     { background-color: rgba(239, 68, 68, 0.1); }
+.dark .bg-emerald-50 { background-color: rgba(16, 185, 129, 0.1); }
+.dark .bg-purple-50  { background-color: rgba(168, 85, 247, 0.1); }
+.dark .bg-pink-50    { background-color: rgba(236, 72, 153, 0.1); }
+.dark .bg-orange-50  { background-color: rgba(249, 115, 22, 0.1); }
+.dark .bg-teal-50    { background-color: rgba(20, 184, 166, 0.1); }
+.dark .bg-indigo-50  { background-color: rgba(99, 102, 241, 0.1); }
+
+/* --- Stat icon backgrounds in dark mode — slightly more visible --- */
+.dark .bg-blue-100    { background-color: rgba(59, 130, 246, 0.2); }
+.dark .bg-green-100   { background-color: rgba(34, 197, 94, 0.2); }
+.dark .bg-yellow-100  { background-color: rgba(234, 179, 8, 0.2); }
+.dark .bg-emerald-100 { background-color: rgba(16, 185, 129, 0.2); }
+.dark .bg-red-100     { background-color: rgba(239, 68, 68, 0.2); }
+.dark .bg-purple-100  { background-color: rgba(168, 85, 247, 0.2); }
+.dark .bg-pink-100    { background-color: rgba(236, 72, 153, 0.2); }
+.dark .bg-orange-100  { background-color: rgba(249, 115, 22, 0.2); }
+.dark .bg-teal-100    { background-color: rgba(20, 184, 166, 0.2); }
+.dark .bg-indigo-100  { background-color: rgba(99, 102, 241, 0.2); }
+
+/* --- Gradient backgrounds --- */
+.dark .from-gray-50  { --tw-gradient-from: #030712; }
+.dark .to-gray-100   { --tw-gradient-to: #111827; }
+
+/* --- Shadow adjustments for dark mode --- */
+.dark .shadow-sm  { box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3); }
+.dark .shadow-lg  { box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -2px rgba(0, 0, 0, 0.3); }
+.dark .shadow-xl  { box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 10px 10px -5px rgba(0, 0, 0, 0.3); }
+.dark .shadow-2xl { box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6); }
+
+/* --- Dividers (inline <hr>) --- */
+.dark .divide-gray-200 > * + * { border-color: #374151; }
