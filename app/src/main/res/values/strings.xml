@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Swastik</string>
+
+    <!-- ─── Medicine Screen ─── -->
+    <string name="medicine_finder">Medicine Finder</string>
+    <string name="search_medicines">Search medicines…</string>
+    <string name="available_near_you">Available Near You 📍</string>
+    <string name="global_catalog_popular">Global Catalog (Popular)</string>
+    <string name="in_stock">In stock</string>
+    <string name="out_of_stock">Out of Stock</string>
+    <string name="no_medicines_found">No medicines found</string>
+    <string name="try_different_search">Try a different search or clear filters</string>
+    <string name="clear_filters">Clear Filters</string>
+    <string name="retry">Retry</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="left_in_stock">%d Left in Stock</string>
+    <string name="local_pharmacy">Local Pharmacy</string>
+
+    <!-- ─── Medicine Detail Screen ─── -->
+    <string name="medicine_details">Medicine Details</string>
+    <string name="description">Description</string>
+    <string name="no_description">No description available</string>
+    <string name="select_pharmacy_to_order">Select a Pharmacy to Order</string>
+    <string name="no_pharmacy_data">No pharmacy availability data</string>
+    <string name="medicine_not_found">Medicine not found</string>
+    <string name="price">Price</string>
+    <string name="price_unavailable">Price unavailable</string>
+    <string name="view_cart">View Cart</string>
+    <string name="rx_required">Rx Required</string>
+    <string name="available">Available</string>
+
+    <!-- ─── Cart Screen ─── -->
+    <string name="medicine_cart">Medicine Cart</string>
+    <string name="place_order">Place Order</string>
+    <string name="delivery_address">Delivery Address</string>
+    <string name="enter_delivery_address">Enter delivery address</string>
+    <string name="cart_empty">Your cart is empty</string>
+    <string name="order_placed_successfully">Order placed successfully!</string>
+    <string name="total">Total</string>
+    <string name="items">Items</string>
+
+    <!-- ─── Order History ─── -->
+    <string name="order_history">Order History</string>
+    <string name="no_orders_found">No orders found</string>
+    <string name="cancel_order">Cancel Order</string>
+
+    <!-- ─── Home Tab ─── -->
+    <string name="todays_reminders">Today\'s Reminders</string>
+    <string name="view_all">View All</string>
+    <string name="no_reminders_today">No reminders for today</string>
+    <string name="reminders_description">Your upcoming appointments and medicine reminders will appear here</string>
+    <string name="quick_actions">Quick Actions</string>
+    <string name="ambulance">Ambulance</string>
+    <string name="vitals">Vitals</string>
+    <string name="prescription">Prescription</string>
+    <string name="help">Help</string>
+    <string name="my_orders">My Orders</string>
+    <string name="my_tests">My Tests</string>
+    <string name="care_services">Care Services</string>
+    <string name="care_services_desc">Hospitals, clinics, pharmacy, and diagnostic booking in separate flows.</string>
+    <string name="hospitals">Hospitals</string>
+    <string name="hospitals_subtitle">Beds, emergency care, specialists</string>
+    <string name="nearby_hospitals">Nearby hospitals</string>
+    <string name="clinics">Clinics</string>
+    <string name="clinics_subtitle">OPD visits and local doctors</string>
+    <string name="clinic_visits">Clinic visits</string>
+    <string name="pharmacy">Pharmacy</string>
+    <string name="pharmacy_subtitle">Check stores and medicine access</string>
+    <string name="medical_stores">Medical stores</string>
+    <string name="diagnostics">Diagnostics</string>
+    <string name="diagnostics_subtitle">Book tests and find centers</string>
+    <string name="labs_and_scans">Labs and scans</string>
+    <string name="open">Open</string>
+    <string name="recommended_for_you">Recommended for You</string>
+    <string name="see_all">See All</string>
+    <string name="no_doctor_recommendations">No doctor recommendations available</string>
+    <string name="recommendations_description">Recommendations will appear after your activity is synced</string>
+    <string name="book">Book</string>
+
+    <!-- ─── AI Health Assistant ─── -->
+    <string name="ai_health_assistant">AI Health Assistant</string>
+    <string name="how_can_i_help">How can I help you today?</string>
+    <string name="describe_symptoms">Describe your symptoms or ask a question</string>
+
+    <!-- ─── Trust Signals ─── -->
+    <string name="verified_doctors">Verified\nDoctors</string>
+    <string name="data_encrypted">Data\nEncrypted</string>
+    <string name="abdm_compliant">ABDM\nCompliant</string>
+
+    <!-- ─── Profile Tab ─── -->
+    <string name="profile">Profile</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="personal_info">Personal Information</string>
+    <string name="language">Language</string>
+    <string name="appearance">Appearance</string>
+    <string name="notifications">Notifications</string>
+    <string name="feedback">Feedback</string>
+    <string name="emergency_contacts">Emergency Contacts</string>
+    <string name="family_members">Family Members</string>
+    <string name="addresses">Addresses</string>
+    <string name="privacy">Privacy</string>
+    <string name="help_center">Help Center</string>
+    <string name="change_password">Change Password</string>
+    <string name="logout">Logout</string>
+
+    <!-- ─── Records Tab ─── -->
+    <string name="records">Records</string>
+    <string name="reports">Reports</string>
+    <string name="prescriptions">Prescriptions</string>
+
+    <!-- ─── Appointment ─── -->
+    <string name="appointments">Appointments</string>
+    <string name="appointment_history">Appointment History</string>
+    <string name="book_appointment">Book Appointment</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="completed">Completed</string>
+    <string name="cancelled">Cancelled</string>
+
+    <!-- ─── Emergency ─── -->
+    <string name="emergency">Emergency</string>
+    <string name="call_ambulance">Call Ambulance</string>
+
+    <!-- ─── Vitals & Reminders ─── -->
+    <string name="vitals_reminders">Vitals &amp; Reminders</string>
+    <string name="add_reminder">Add Reminder</string>
+    <string name="record_vitals">Record Vitals</string>
+
+    <!-- ─── Diagnostic Booking ─── -->
+    <string name="diagnostic_booking">Diagnostic Booking</string>
+    <string name="booking_history">Booking History</string>
+
+    <!-- ─── Chatbot ─── -->
+    <string name="chatbot">Health Assistant</string>
+    <string name="type_message">Type your message…</string>
+
+    <!-- ─── Common ─── -->
+    <string name="back">Back</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
+    <string name="loading">Loading…</string>
+    <string name="no_data">No data available</string>
+    <string name="error">Error</string>
+    <string name="success">Success</string>
+    <string name="close">Close</string>
+</resources>

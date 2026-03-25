@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">स्वास्तिक</string>
+
+    <!-- ─── Medicine Screen ─── -->
+    <string name="medicine_finder">दवा खोजें</string>
+    <string name="search_medicines">दवाइयां खोजें…</string>
+    <string name="available_near_you">आपके पास उपलब्ध 📍</string>
+    <string name="global_catalog_popular">वैश्विक कैटलॉग (लोकप्रिय)</string>
+    <string name="in_stock">स्टॉक में</string>
+    <string name="out_of_stock">स्टॉक में नहीं</string>
+    <string name="no_medicines_found">कोई दवा नहीं मिली</string>
+    <string name="try_different_search">कोई अलग खोज आज़माएं या फ़िल्टर साफ़ करें</string>
+    <string name="clear_filters">फ़िल्टर साफ़ करें</string>
+    <string name="retry">पुनः प्रयास</string>
+    <string name="something_went_wrong">कुछ गलत हो गया</string>
+    <string name="left_in_stock">%d स्टॉक में शेष</string>
+    <string name="local_pharmacy">स्थानीय फार्मेसी</string>
+
+    <!-- ─── Medicine Detail Screen ─── -->
+    <string name="medicine_details">दवा विवरण</string>
+    <string name="description">विवरण</string>
+    <string name="no_description">कोई विवरण उपलब्ध नहीं</string>
+    <string name="select_pharmacy_to_order">ऑर्डर करने के लिए फार्मेसी चुनें</string>
+    <string name="no_pharmacy_data">फार्मेसी उपलब्धता डेटा नहीं</string>
+    <string name="medicine_not_found">दवा नहीं मिली</string>
+    <string name="price">कीमत</string>
+    <string name="price_unavailable">कीमत उपलब्ध नहीं</string>
+    <string name="view_cart">कार्ट देखें</string>
+    <string name="rx_required">पर्चा आवश्यक</string>
+    <string name="available">उपलब्ध</string>
+
+    <!-- ─── Cart Screen ─── -->
+    <string name="medicine_cart">दवा कार्ट</string>
+    <string name="place_order">ऑर्डर दें</string>
+    <string name="delivery_address">डिलीवरी पता</string>
+    <string name="enter_delivery_address">डिलीवरी पता दर्ज करें</string>
+    <string name="cart_empty">आपका कार्ट खाली है</string>
+    <string name="order_placed_successfully">ऑर्डर सफलतापूर्वक दिया गया!</string>
+    <string name="total">कुल</string>
+    <string name="items">आइटम</string>
+
+    <!-- ─── Order History ─── -->
+    <string name="order_history">ऑर्डर इतिहास</string>
+    <string name="no_orders_found">कोई ऑर्डर नहीं मिला</string>
+    <string name="cancel_order">ऑर्डर रद्द करें</string>
+
+    <!-- ─── Home Tab ─── -->
+    <string name="todays_reminders">आज के रिमाइंडर</string>
+    <string name="view_all">सभी देखें</string>
+    <string name="no_reminders_today">आज कोई रिमाइंडर नहीं</string>
+    <string name="reminders_description">आपकी आगामी अपॉइंटमेंट और दवा रिमाइंडर यहां दिखाई देंगे</string>
+    <string name="quick_actions">त्वरित कार्य</string>
+    <string name="ambulance">एम्बुलेंस</string>
+    <string name="vitals">वाइटल्स</string>
+    <string name="prescription">पर्चा</string>
+    <string name="help">सहायता</string>
+    <string name="my_orders">मेरे ऑर्डर</string>
+    <string name="my_tests">मेरी जांच</string>
+    <string name="care_services">स्वास्थ्य सेवाएं</string>
+    <string name="care_services_desc">अस्पताल, क्लिनिक, फार्मेसी और डायग्नोस्टिक बुकिंग अलग-अलग फ्लो में।</string>
+    <string name="hospitals">अस्पताल</string>
+    <string name="hospitals_subtitle">बेड, इमरजेंसी, विशेषज्ञ</string>
+    <string name="nearby_hospitals">पास के अस्पताल</string>
+    <string name="clinics">क्लिनिक</string>
+    <string name="clinics_subtitle">ओपीडी विज़िट और स्थानीय डॉक्टर</string>
+    <string name="clinic_visits">क्लिनिक विज़िट</string>
+    <string name="pharmacy">फार्मेसी</string>
+    <string name="pharmacy_subtitle">स्टोर देखें और दवा एक्सेस करें</string>
+    <string name="medical_stores">मेडिकल स्टोर</string>
+    <string name="diagnostics">डायग्नोस्टिक</string>
+    <string name="diagnostics_subtitle">जांच बुक करें और केंद्र खोजें</string>
+    <string name="labs_and_scans">लैब और स्कैन</string>
+    <string name="open">खोलें</string>
+    <string name="recommended_for_you">आपके लिए सुझाए गए</string>
+    <string name="see_all">सभी देखें</string>
+    <string name="no_doctor_recommendations">कोई डॉक्टर सुझाव उपलब्ध नहीं</string>
+    <string name="recommendations_description">आपकी गतिविधि सिंक होने के बाद सुझाव दिखाई देंगे</string>
+    <string name="book">बुक करें</string>
+
+    <!-- ─── AI Health Assistant ─── -->
+    <string name="ai_health_assistant">AI स्वास्थ्य सहायक</string>
+    <string name="how_can_i_help">मैं आज आपकी कैसे मदद कर सकता हूं?</string>
+    <string name="describe_symptoms">अपने लक्षण बताएं या कोई प्रश्न पूछें</string>
+
+    <!-- ─── Trust Signals ─── -->
+    <string name="verified_doctors">सत्यापित\nडॉक्टर</string>
+    <string name="data_encrypted">डेटा\nएन्क्रिप्टेड</string>
+    <string name="abdm_compliant">ABDM\nअनुपालक</string>
+
+    <!-- ─── Profile Tab ─── -->
+    <string name="profile">प्रोफ़ाइल</string>
+    <string name="edit_profile">प्रोफ़ाइल संपादित करें</string>
+    <string name="personal_info">व्यक्तिगत जानकारी</string>
+    <string name="language">भाषा</string>
+    <string name="appearance">दिखावट</string>
+    <string name="notifications">सूचनाएं</string>
+    <string name="feedback">प्रतिक्रिया</string>
+    <string name="emergency_contacts">आपातकालीन संपर्क</string>
+    <string name="family_members">परिवार के सदस्य</string>
+    <string name="addresses">पते</string>
+    <string name="privacy">गोपनीयता</string>
+    <string name="help_center">सहायता केंद्र</string>
+    <string name="change_password">पासवर्ड बदलें</string>
+    <string name="logout">लॉगआउट</string>
+
+    <!-- ─── Records Tab ─── -->
+    <string name="records">रिकॉर्ड</string>
+    <string name="reports">रिपोर्ट</string>
+    <string name="prescriptions">पर्चे</string>
+
+    <!-- ─── Appointment ─── -->
+    <string name="appointments">अपॉइंटमेंट</string>
+    <string name="appointment_history">अपॉइंटमेंट इतिहास</string>
+    <string name="book_appointment">अपॉइंटमेंट बुक करें</string>
+    <string name="upcoming">आगामी</string>
+    <string name="completed">पूर्ण</string>
+    <string name="cancelled">रद्द</string>
+
+    <!-- ─── Emergency ─── -->
+    <string name="emergency">आपातकालीन</string>
+    <string name="call_ambulance">एम्बुलेंस कॉल करें</string>
+
+    <!-- ─── Vitals & Reminders ─── -->
+    <string name="vitals_reminders">वाइटल्स और रिमाइंडर</string>
+    <string name="add_reminder">रिमाइंडर जोड़ें</string>
+    <string name="record_vitals">वाइटल्स रिकॉर्ड करें</string>
+
+    <!-- ─── Diagnostic Booking ─── -->
+    <string name="diagnostic_booking">डायग्नोस्टिक बुकिंग</string>
+    <string name="booking_history">बुकिंग इतिहास</string>
+
+    <!-- ─── Chatbot ─── -->
+    <string name="chatbot">स्वास्थ्य सहायक</string>
+    <string name="type_message">अपना संदेश लिखें…</string>
+
+    <!-- ─── Common ─── -->
+    <string name="back">वापस</string>
+    <string name="save">सहेजें</string>
+    <string name="cancel">रद्द करें</string>
+    <string name="confirm">पुष्टि करें</string>
+    <string name="loading">लोड हो रहा है…</string>
+    <string name="no_data">कोई डेटा उपलब्ध नहीं</string>
+    <string name="error">त्रुटि</string>
+    <string name="success">सफलता</string>
+    <string name="close">बंद करें</string>
+</resources>
