@@ -45,7 +45,7 @@ router.get('/prescriptions/:id',
 
 // Get all reports
 router.get('/',
-  authorize('patient'),
+  authorize('patientt'),
   asyncHandler(async (req, res) => {
     const { page = 1, limit = 20, type, status, fromDate, toDate } = req.query;
     const result = await reportService.getReports(
