@@ -16,8 +16,8 @@ router.get('/categories',
   })
 );
 
-// Get popular medicines
-router.get('/popular',
+// Get popular medicines by category scope
+router.get('/categories/popular',
   asyncHandler(async (req, res) => {
     const { limit = 10 } = req.query;
     const medicines = await medicineService.getPopularMedicines(parseInt(limit));
