@@ -1,8 +1,19 @@
-/** 
+/**
  * Centralized Configuration
  * Loads all environment variables with defaults
  */
-require('dotenv').config();
+try {
+  require('dotenv').config();
+} catch (error) {
+  // Fall back to Node's built-in .env loader when dotenv is unavailable.
+  if (typeof process.loadEnvFile === 'function') {
+    try {
+      process.loadEnvFile();
+    } catch (_) {
+      // Ignore missing .env files and rely on existing process.env values.
+    }
+  }
+}
 
 const config = {
   // Server
@@ -24,7 +35,7 @@ const config = {
         throw new Error('FATAL: JWT_SECRET environment variable is required in production');
       }
       if (!secret) {
-        throw new Error('FATAL: JWT_SECRET environment variable is required. Set it in your .env file.');
+        return 'dev-jwt-secret-change-me';
       }
       return secret;
     })(),

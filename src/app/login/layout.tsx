@@ -1,23 +1,18 @@
-import { Suspense, type ReactNode } from 'react';
-
-function LoginLayoutFallback() {
-    return (
-        <div className="min-h-screen flex items-center justify-center bg-gray-50 dark:bg-gray-950">
-            <div
-                className="h-8 w-8 animate-spin rounded-full border-4 border-gray-300 border-t-blue-600"
-                aria-label="Loading login page"
-            />
-        </div>
-    );
-}
+import { Suspense, ReactNode } from 'react';
 
 /**
  * Layout for login pages.
  * Wraps children in Suspense because login pages use useSearchParams().
  */
-export default function LoginLayout({ children }: Readonly<{ children: ReactNode }>) {
+export default function LoginLayout({ children }: { children: ReactNode }) {
     return (
-        <Suspense fallback={<LoginLayoutFallback />}>
+        <Suspense
+            fallback={
+                <div className="min-h-screen flex items-center justify-center bg-gray-50 dark:bg-gray-950">
+                    <div className="animate-spin h-8 w-8 border-4 border-gray-300 border-t-blue-600 rounded-full" />
+                </div>
+            }
+        >
             {children}
         </Suspense>
     );
